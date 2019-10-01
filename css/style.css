@@ -1,4 +1,79 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.preview-baku h1, .preview-london h1, .preview-madrid h1, .preview-rome h1{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10%;
+}
+
+.container div {
+  background-color: red;
+  display: block;
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+}
+
+.preview-baku {
+  background: red url(/images/baku.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.preview-london {
+  background: red url(/images/london.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.preview-madrid {
+  background: red url(/images/madrid.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.preview-rome {
+  background: red url(/images/rome.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+@media screen and (min-width: 575px) {
+    .container div {
+      width: 50%;
+    }
+  }
+
+@media screen and (min-width: 991px) {
+  .container div {
+    width: 25%;
+  }
 }
